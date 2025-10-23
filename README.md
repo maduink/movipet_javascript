@@ -1,4 +1,5 @@
-🚀 Entrega III: Interatividade e Funcionalidades em Formulários
+#🚀 Entrega III: Interatividade e Funcionalidades em Formulários
+
 📝 Objetivo do Projeto
 Esta entrega foca na utilização de JavaScript para introduzir interatividade e validação de dados em formulários. O foco principal é a Manipulação do DOM e a criação de um sistema robusto para verificar a consistência das informações fornecidas pelo usuário, em especial a data de nascimento.
 
