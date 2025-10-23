@@ -1,0 +1,16 @@
+:root {
+    --space-xs: 8px;
+    --space-sm: 16px;
+    --space-md: 24px;
+    --space-lg: 32px;
+    --space-xl: 48px;
+    --space-xxl: 64px;
+}
+
+.container {
+    padding: var(--space-md);
+}
+
+.section {
+    padding: var(--space-lg) 0;
+}

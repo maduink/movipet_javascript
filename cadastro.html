@@ -1,0 +1,83 @@
+<!-- ======= voluntariado ======= -->
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Voluntariado — MoviPET</title>
+  <meta name="description" content="Como ser voluntário na MoviPET: formas de ajudar e formulário de inscrição.">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">MoviPET</a>
+      <button id="navToggle3" class="nav-toggle" aria-label="Abrir menu">☰</button>
+      <nav class="nav" id="mainNav3">
+        <a href="index.html">Início</a>
+        <a href="index.html#sobre">Sobre</a>
+        <a href="cadastro.html">Voluntariado</a>
+        <a href="projetos.html">Projetos Sociais</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h1>Seja Voluntário</h1>
+      <p class="muted">Obrigado por querer participar! Veja abaixo como ajudar e inscreva-se.</p>
+
+      <h2>Como participar</h2>
+      <ul>
+        <li>Trazer ração ou doação simbólica para ajudar os acolhidos</li>
+        <li>Ajudar na organização dos eventos</li>
+        <li>Divulgar os animais em adoção nas redes</li>
+        <img class="img3" src="img/yogacadastro.jpg">
+      </ul>
+
+      <h2>Inscreva-se</h2>
+      <form id="volForm" class="form">
+        <label>Nome completo <input type="text" name="name" required></label>
+        <label>E-mail <input type="email" name="email" required></label>
+        <label>CPF <input type="text" name="cpf" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}"placeholder="000.000.000-00" maxlength="14" 
+    required></label>
+        <label>CEP <input type="text" name="cep" pattern="^\d{5}-?\d{3}$" placeholder="00000-000" required maxlength="8"></label>
+        <label>Cidade <input type="text" name="cidade" required></label>
+        <label>Estado <input type="text" name="estado" required></label>
+        <label>Data de nascimento <input type="date" name="nascimento" id="nascimento" required></label>
+        <label>Telefone<input type="tel" pattern="\d*" name="telefone" maxlength="11" placeholder="00 000000000" required></label>
+        <label>Atividades
+          <select name="ListadeAttv">
+            <option>Caminhada com os doguinhos</option>
+            <option>Yoga com os gatinhos</option>
+            <option>Banho em todos os pets</option>
+          </select>
+        </label>
+        <label>Quais atividades propostas do MoviPet te despertou mais interesse? <textarea name="message"
+            rows="4"></textarea></label>
+        <div class="form-actions">
+          <button type="submit" class="btn">Enviar inscrição</button>
+        </div>
+      </form>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>MoviPET</h3>
+        <p>© 2025 MoviPET — ONG de Adoção e Movimento</p>
+      </div>
+      <div>
+        <p>Contato: <a href="mailto:contato@movipet.org">contato@movipet.org</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

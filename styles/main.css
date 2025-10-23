@@ -1,0 +1,334 @@
+/* Importação de estilos base */
+@import url('./css/base/reset.css');
+@import url('./css/base/typography.css');
+@import url('./css/base/spacing.css');
+
+/* Importação de estilos de componentes */
+@import url('./css/components/buttons.css');
+@import url('./css/components/forms.css');
+@import url('./css/components/cards.css');
+@import url('./css/components/alerts.css');
+
+/* Importação de estilos de layout */
+@import url('./css/layout/grid.css');
+@import url('./css/layout/header.css');
+@import url('./css/layout/footer.css');
+@import url('./css/layout/hero.css');
+
+/* Importação de media queries */
+@import url('./css/media-queries/mobile.css');
+@import url('./css/media-queries/tablet.css');
+@import url('./css/media-queries/desktop.css');
+
+
+:root {
+    --accent: #000000;
+    --muted: #ffffff;
+    --bg: #172c08;
+    --card: #fff;
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    line-height: 1.5;
+    margin: 0;
+    color: #111;
+    background: var(--bg)
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 24px;
+    color: #ddd;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.brand {
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+    font-size: 1.25rem
+}
+
+.nav {
+    display: flex;
+    gap: 18px
+}
+
+.nav a {
+    color: black;
+    text-decoration: none;
+    padding: 8px
+}
+
+.nav-toggle {
+    display: none;
+    background: none;
+    border: 0;
+    font-size: 1.25rem
+}
+
+.site-header {
+    border-bottom: 1px solid #eee;
+    background: #fff
+}
+
+.hero {
+    padding: 48px 0
+}
+
+.yogazinho {
+    border-radius: 30px;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 28px;
+    align-items: center
+}
+
+.lead {
+    font-size: 1.125rem;
+    margin: 8px 0
+}
+
+.tag {
+    color: var(--accent);
+    font-weight: 600
+}
+
+.hero-cta {
+    margin-top: 16px;
+    display: flex;
+    gap: 12px
+}
+
+.btn {
+    background: var(--accent);
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block
+}
+
+.btn.outline {
+    background: #ffffff;
+    color: var(--accent);
+    border: 1px solid var(--accent)
+}
+
+.section {
+    padding: 40px 0
+}
+
+.alt {
+    background: #f9f9f9
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin-top: 16px
+}
+
+.card {
+    background: var(--card);
+    color: #000000;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 6px 18px rgba(8, 10, 15, 0.04)
+}
+
+.three-cols {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin-top: 18px
+}
+
+.img4{
+    width: 300px;
+    height: 250px;
+    padding-top: 20px;
+    right: 80px;
+    padding-bottom: 30px;
+    position: absolute;
+    right: 80px;
+}
+
+.box {
+    background: #172c0807;
+    padding: 18px;
+    border-radius: 10px
+}
+
+.projects-list {
+    margin-top: 12px;
+}
+
+.donats{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+    color: #ddd;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    position: static;
+    gap: 12px;
+    color: #000000;
+    padding: 18px 0
+}
+
+footer {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.center {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.muted {
+    color: var(--muted)
+}
+
+.small {
+    font-size: 0.9rem
+}
+
+.form {
+    display: grid;
+    gap: 12px;
+    max-width: 640px
+}
+
+.form input,
+.form select,
+.form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px
+}
+
+.sobre{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.form-actions {
+    display: flex;
+    gap: 12px
+}
+
+.invalido {
+    color: #ffffff;
+}
+
+.img3 {
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+    padding-top: 20px;
+    position: absolute;
+    right: 80px;
+    border-radius: 500px;
+}
+
+.inicio{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+/* ============ RESPONSIVIDADE ============ */
+
+@media (max-width: 880px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nav {
+        display: none;
+        color: #000000;
+        flex-direction: column;
+        background: #fff;
+        position: absolute;
+        right: 18px;
+        top: 64px;
+        padding: 12px;
+        border-radius: 8px;
+        box-shadow: 0 6px 18px rgba(8, 10, 15, 0.08);
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    /* imagem da página de cadastro */
+    .img3 {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        border-radius: 20px;
+        display: block;
+    }
+
+    /* formulário e texto */
+    .section {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .form {
+        max-width: 100%;
+    }
+
+    .form-actions {
+        justify-content: center;
+    }
+
+    .footer-grid {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 0.95rem;
+    }
+
+    .brand {
+        font-size: 1.1rem;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+}

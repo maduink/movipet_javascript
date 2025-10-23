@@ -1,0 +1,22 @@
+.btn {
+    background: var(--accent);
+    color: #fff;
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #444;
+}
+
+.btn:focus {
+    outline: 2px solid var(--accent);
+}
+
+.btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
